@@ -1,0 +1,364 @@
+/*-----------------------------------------------------------------------------------------------*/
+/*                                  CSS RESET THANKS TO ERIC MEYER                               */
+/*                   http://meyerweb.com/eric/thoughts/2007/05/01/reset-reloaded/                */
+/*-----------------------------------------------------------------------------------------------*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;
+	font-weight: inherit;
+	font-style: inherit;
+	font-size: 100%;
+	font-family: inherit;
+	vertical-align: baseline;
+}
+/* remember to define focus styles! */
+:focus {outline: 0;}
+body {line-height: 1;color: black;background: white;}
+ol, ul {list-style: none;}
+/* tables still need 'cellspacing="0"' in the markup */
+table {border-collapse: separate;border-spacing: 0;}
+caption, th, td {text-align: left;font-weight: normal;}
+blockquote:before, blockquote:after,
+q:before, q:after {content: '"';}
+blockquote, q {quotes: '"' '"';}
+
+/*-----------------------------------------------------------------------------------------------*/
+/*                                          GENERAL STYLES                                       */
+/*-----------------------------------------------------------------------------------------------*/
+
+body {
+    Font-family: Calibri, Verdana, Ariel, sans-serif;
+	font-size: 16px;
+	line-height: 1.6em;
+	color: #777;}
+	
+p {margin: 15px 0; font-family: Arial, Helvetica, sans-serif;}
+
+h1 {font-size: 1.4em; color: #333;}
+h2 {font-weight: bold;}
+
+a {color: #8CA3AF; font-weight: bold; text-decoration:none;}
+a:hover {color: #999;}
+
+strong {font-weight: bold;}
+
+textarea {white-space: nowrap;}
+
+/*-----------------------------------------------------------------------------------------------*/
+/*                                          GENERAL LAYOUT                                       */
+/*-----------------------------------------------------------------------------------------------*/
+
+body {background: #FFF;}
+
+#wrapper {margin: auto; padding: 10px;}
+
+
+#content {
+	width: 270px;
+	padding: 15px 25px; 
+	float: left; 
+	background: transparent url(images/leftColumn.gif) no-repeat; 
+	min-height: 575px;
+	height: auto !important;
+	height: 575px;
+}
+		
+	
+.tTip {cursor: pointer; color: #666; font-weight: bold;}
+.tip {color: #333;}
+
+#footer {
+    clear:both;
+    margin: 0px auto;
+    font-size: 11px;
+    width: 75%;
+}
+
+#footer p {
+    text-align: center;
+}  
+
+#selections {
+}
+#selections td {
+    padding: 10px;
+    vertical-align:middle;
+}
+
+#selections .entry {
+    text-align: right;
+    padding-right: 0px;
+}
+
+#selections .symbol {
+    padding-left: 0px;
+}
+.expl {
+    padding: 0 0 0 10px;
+    height: 52px;
+    width: 40px;
+    border-top: 1px solid #000;
+    border-right: 1px solid #000;
+    border-bottom: 1px solid #000;
+    border-radius: 0px 5px 5px 0px;
+    background: #eee;
+    display:table-cell; 
+    vertical-align:middle;
+}
+
+/* Opera Only height fix */
+noindex:-o-prefocus, .expl {
+  height: 54px;;
+}
+
+#selections td.emailTD {
+    text-align: right;
+    padding:10px 20px 10px 10px;
+    display: none;
+}
+.adminTxt {
+    height: 52px;
+    line-height: 52px;
+    padding-left: 5px;
+    padding-right: 5px;
+    border-radius: 5px;
+    color: #777;
+    border: 1px solid #000;
+    margin-right: -2px;
+}
+#admin td, #admin1 td, #admin2 td {
+    padding: 5px;
+}
+.section, .section1, .section2 {
+    float:left;
+    padding: 5px;
+    margin: 5px;
+}
+
+.adminSel {
+    height: 52px;
+    line-height:46px;   /* For Safari */
+    padding: 10px;
+    border-radius: 5px;
+    color: #777;
+    border: 1px solid #000;
+    margin-right: -2px;
+}
+p.sep {
+    color: #333;
+    text-decoration: underline;
+}
+
+.inTxt {
+    height: 50px;
+    padding-left: 5px;
+    padding-right: 5px;
+    border-radius: 5px 0px 0px 5px;
+    color: #777;
+    border: 1px solid #000;
+    margin-right: -2px;
+    vertical-align: middle;
+    line-height: 50px;  /* For IE 8 */
+}
+
+.inSel {
+    height: 54px;
+    line-height:48px;   /* For Safari */
+    padding: 10px;
+    border-radius: 5px 0px 0px 5px;
+    color: #777;
+    border: 1px solid #000;
+    margin-right: -2px;
+}
+
+.focus {
+    border: 1px solid #2981e4;
+}
+
+.buttonRow {
+    text-align: right;
+}
+
+.buttons, .buttons:visited {  
+    background: #222 url(images/overlay.png) repeat-x;     
+    display: inline-block;  
+    color: #fff;    
+    text-decoration: none;  
+    -moz-border-radius: 6px;    
+    -webkit-border-radius: 6px; 
+    border-radius: 6px;
+    -moz-box-shadow: 0 1px 3px rgba(0,0,0,0.6); 
+    -webkit-box-shadow: 0 1px 3px rgba(0,0,0,0.6);  
+    box-shadow: 0 1px 3px rgba(0,0,0,0.6);
+    text-shadow: 0 -1px 1px rgba(0,0,0,0.25);   
+    border: 1px solid #777;
+    position: relative;     
+    cursor: pointer;
+    font-size: 16px;                                                      
+    padding: 8px 14px 9px; 
+}
+
+.buttons:active { 
+    top: 1px; 
+}
+
+.tableContainer {
+    border-radius: 5px;
+    border: 1px solid #777;
+}
+
+.schedule {
+    width: 100%;
+}
+.schedule td {
+    text-align: center;
+    padding: 5px;
+}
+
+.schedule th {
+    background-color: #777;
+    color: #ccc;
+    text-align: center;
+    padding: 5px 0 5px 0;
+}
+
+tr.evenRow td {
+    background-color: #FFFFFF;
+}
+tr.oddRow td {
+    background-color: #E6E6E6;
+}
+
+.highlight {
+    background-color: #9fe48e; 
+    color: #000;
+}
+
+#schedule {
+    float:left;
+    width: 650px;
+    padding: 10px;
+}
+
+
+				
+/*-----------------------------------------------------------------------------------------------*/
+/*                                         TOOLTIP STYLES                                        */
+/*-----------------------------------------------------------------------------------------------*/
+
+.tip {
+	width: 212px;
+	padding-top: 37px;
+	overflow: hidden;
+	display: none;
+	position: absolute;
+	z-index: 500;
+	background: transparent url(images/tipTop.png) no-repeat top;}
+	
+.tipMid {background: transparent url(images/tipMid.png) repeat-y; padding: 0 25px 20px 25px;}
+.tipBtm {background: transparent url(images/tipBtm.png) no-repeat bottom; height: 32px;}
+
+/*-----------------------------------------------------------------------------------------------*/
+/*                                         Button Colors                                         */
+/*-----------------------------------------------------------------------------------------------*/
+
+.greenButton, .greenButton:visited        { background-color: #64b252; }  
+.greenButton:hover                        { background-color: #569a46; }
+.redButton, .redButton:visited            { background-color: #e62727; }  
+.redButton:hover                          { background-color: #cf2525; }  
+.orangeButton, .orangeButton:visited      { background-color: #ff5c00; }  
+.orangeButton:hover                       { background-color: #d45500; }  
+.blueButton, .blueButton:visited          { background-color: #2981e4; }  
+.blueButton:hover                         { background-color: #2575cf; }  
+.yellowButton, .yellowButton:visited      { background-color: #ffb515; }  
+.yellowButton:hover                       { background-color: #fc9200; }
+
+/* Modal Styling */
+#overlay {
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    background:#000;
+    z-index:99;
+    opacity:0.5;
+}
+
+#modal {
+    position:absolute;
+    background:url(tint20.png) 0 0 repeat;
+    background:rgba(0,0,0,0.2);
+    border-radius:14px;
+    padding:8px;
+    z-index:100;
+}
+
+#content {
+    border-radius:8px;
+    background:#fff;
+    padding:20px;
+    width: 700px;
+    height: 400px;
+    overflow: auto;
+}
+
+#close {
+    position:absolute;
+    background:url(close.png) 0 0 no-repeat;
+    width:24px;
+    height:27px;
+    display:block;
+    text-indent:-9999px;
+    top:-7px;
+    right:-7px;
+}
+
+.formDiv
+{
+    float: left;
+    position: relative;
+    width: 500px;
+    padding: 25px;
+    background-color: #fff;
+    border: 1px solid #999;
+}
+.formDiv:before, .formDiv:after
+{
+    position: absolute;
+    width: 40%;
+    height: 30px;
+    content: ' ';
+    left: 12px;
+    bottom: 12px;
+    background: transparent;
+    -webkit-transform: skew(-5deg) rotate(-5deg);
+    -moz-transform: skew(-5deg) rotate(-5deg);
+    -ms-transform: skew(-5deg) rotate(-5deg);
+    -o-transform: skew(-5deg) rotate(-5deg);
+    transform: skew(-5deg) rotate(-5deg);
+    -webkit-box-shadow: 0 6px 12px rgba(0, 0, 0, 0.7);
+    -moz-box-shadow: 0 6px 12px rgba(0, 0, 0, 0.7);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.7);
+    z-index: -1;
+}
+.formDiv:after
+{
+    left: auto;
+    right: 12px;
+    -webkit-transform: skew(5deg) rotate(5deg);
+    -moz-transform: skew(5deg) rotate(5deg);
+    -ms-transform: skew(5deg) rotate(5deg);
+    -o-transform: skew(5deg) rotate(5deg);
+    transform: skew(5deg) rotate(5deg);
+}
+

@@ -1,0 +1,14 @@
+/*
+ *  IE7 is not supported, but at least let the calculator display in it
+ */
+#calcWrapper {
+    position:absolute;
+}
+#overlay {
+    -ms-filter: progid:DXImageTransform.Microsoft.Alpha(Opacity = 50);
+    filter: alpha(opacity = 50);
+}
+.waiting {
+    -ms-filter: progid:DXImageTransform.Microsoft.Alpha(Opacity = 50);
+    filter: alpha(opacity = 50);
+}
