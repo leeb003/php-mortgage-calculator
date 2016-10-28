@@ -111,3 +111,5 @@ I've used the following library in this tool.
  - TCPDF library for pdf creation (http://www.tcpdf.org/)
 		
 Please feel free to contribute to the functionality of the calculator here on Github.
+
+If you are looking for a WordPress Amortization Calculator with lots of optionscheck out ours that is available on CodeCanyon - [WP Amortization Calculator](http://codecanyon.net/item/wp-amortization-calculator/13004942?ref=sh-themes)
